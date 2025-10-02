@@ -6,7 +6,9 @@
 - La palabra Pong es una marca registrada por Atari Interactive, mientras que la palabra genérica «pong» es usada para describir el género de videojuegos «bate y bola».
 - La popularidad de Pong dio lugar a una demanda de infracción de patentes y ganada por parte de los fabricantes de Magnavox Odyssey, que poseía un juego similar en el que Pong de Atari claramente se había inspirado luego de una visita de Bushnell a las oficinas de Magnavox donde vio una demostración del mismo.
 
-![Imagen Pong](img/01-pong.png)
+<p align="center">
+    <img src="img/01-pong.png">
+</p>
 
 ---
 
@@ -14,7 +16,15 @@
 
 Para empezar a crear nuestro juego vamos a crear un proyecto 2D. Hacemos clic en **New project** en Unity Hub.
 
+<p align="center">
+    <img src="img/02-crearProject.png">
+</p>
+
 Elegimos **2D Core**, ponemos el nombre del proyecto y hacemos clic en **Create project**.
+
+<p align="center">
+    <img src="img/03-2D_Core.png">
+</p>
 
 ### 2.1 Configuración inicial del proyecto
 
@@ -30,12 +40,20 @@ Elegimos **2D Core**, ponemos el nombre del proyecto y hacemos clic en **Create 
 
 Para poder realizar un juego estilo PONG necesitamos los siguientes elementos.
 
+<p align="center">
+    <img src="img/04-elementosJuego.png">
+</p>
+
 ### 3.2 Dinámica del Juego
 
 - Los jugadores se pasan la pelota entre sí.
 - Si la pelota toca la pared superior o inferior rebota y se sigue jugando.
 - Un jugador hace punto si la pelota cruza la línea que defiende el otro jugador.
 - Cuando se anota un punto se incrementa el marcador del jugador.
+
+<p align="center">
+    <img src="img/05-dinamicaJuego.png">
+</p>
 
 ---
 
@@ -72,9 +90,17 @@ Para las palas:
 
 Agregamos **BoxCollider2D** a todos los Sprites excepto a la **LineaCentral**.
 
+<p align="center">
+    <img src="img/06-boxColider.png">
+</p>
+
 ### 5.2 Indicamos Sprites Gol como “Triggers”
 
 Seleccionamos **Gol1** y **Gol2**, en el Inspector activamos **IsTrigger (true)**.
+
+<p align="center">
+    <img src="img/07-trigger.png">
+</p>
 
 ### 5.3 Elementos en Movimiento (RigidBody)
 
@@ -183,6 +209,12 @@ private void OnCollisionEnter2D(Collision2D collision)
 
 ### 5.10 Marcadores
 
+Para que sólo tengamos una instancia única del Controlador del Juego vamos a implementar el patrón de diseño “Singleton”. 
+
+<p align="center">
+    <img src="08-singleton.png">
+</p>
+
 ```csharp
 using UnityEngine;
 using TMPro;
@@ -255,3 +287,7 @@ private void OnTriggerEnter2D(Collider2D collision)
 
 - Unity Docs: [https://docs.unity3d.com/](https://docs.unity3d.com/)
 - Patrón Singleton: [https://refactoring.guru/es/design-patterns/singleton](https://refactoring.guru/es/design-patterns/singleton)
+
+---
+
+[![Made with ❤️ by Tever](https://img.shields.io/badge/Made%20with%20❤️-by%20Tever-181717?logo=github)](https://github.com/devTever)
