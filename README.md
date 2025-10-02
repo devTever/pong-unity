@@ -283,7 +283,19 @@ private void OnTriggerEnter2D(Collider2D collision)
 
 ---
 
-## Documentación extra
+## 6- Video con el desarrollo del PONG
+
+[ENLACE AL VIDEO CUANDO ESTÉ DISPONIBLE]
+
+---
+
+## 7- EXTRA: Mejoras para el PONG 
+
+[MATERIAL CON LAS MEJORAS]
+
+---
+
+## 8- Documentación extra
 
 - Unity Docs: [https://docs.unity3d.com/](https://docs.unity3d.com/)
 - Patrón Singleton: [https://refactoring.guru/es/design-patterns/singleton](https://refactoring.guru/es/design-patterns/singleton)
