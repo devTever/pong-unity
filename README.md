@@ -212,7 +212,7 @@ private void OnCollisionEnter2D(Collision2D collision)
 Para que sólo tengamos una instancia única del Controlador del Juego vamos a implementar el patrón de diseño “Singleton”. 
 
 <p align="center">
-    <img src="08-singleton.png">
+    <img src="img/08-singleton.png">
 </p>
 
 ```csharp
