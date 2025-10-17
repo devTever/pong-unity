@@ -285,13 +285,13 @@ private void OnTriggerEnter2D(Collider2D collision)
 
 ## 6- Video con el desarrollo del PONG
 
-[ENLACE AL VIDEO CUANDO ESTÉ DISPONIBLE]
+<a href="https://youtu.be/y4sX1yuFKjI">🏓 Proyecto PONG en Unity | Tutorial paso a paso del Juego clásico 2D</a>
 
 ---
 
 ## 7- EXTRA: Mejoras para el PONG 
 
-[MATERIAL CON LAS MEJORAS]
+v1.2 <a href="https://youtu.be/y4sX1yuFKjI">OrnitoPong - Versión ornitorrinca del Pong vertical</a>
 
 ---
 
